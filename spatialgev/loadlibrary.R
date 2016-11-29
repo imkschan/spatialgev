@@ -1,0 +1,28 @@
+library(RandomFields)
+library(copula)
+library(evd)
+library(rootSolve)
+library(MASS)
+library(mvtnorm)
+library(rbenchmark)
+library(ggplot2)
+library(grid)
+library(gridExtra)
+
+library(QRM)
+
+library(Rcpp)
+library(RcppArmadillo)
+
+if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3/")
+source('func.R')
+cat('Sourced func.R\n')
+source('func.cleansing.R')
+cat('Sourced func.cleansing.R\n')
+source('func.sim.R')
+cat('Sourced func.sim.R\n')
+source('func.mcmc.R')
+cat('Sourced func.mcmc.R\n')
+
+sourceCpp('rcpparmafunc.cpp')
+cat('Sourced rcpparmafunc.cpp\n')
