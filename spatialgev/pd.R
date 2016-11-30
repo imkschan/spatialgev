@@ -1,6 +1,6 @@
 startTime <- Sys.time()
 
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
 source('loadlibrary.R')
 library(maps)
 library(fields)
@@ -29,6 +29,7 @@ realsite <- cbind(site[,1]/10+22.2,site[,2]/10+113)
 pd1 <- array(dim=c(step,n,npredsite,tt))
 
 # calculate the quantities
+cat('\nStart loading ...(end at 30000)\n')
 for (i in bstep:estep){
 	tmpU <- rCopula(1, normalCopula(param=copparm[i,],dim=5,dispstr='un'))
 	if (i %% 250 == 1) cat(i,' ')

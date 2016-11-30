@@ -1,6 +1,6 @@
 startTime <- Sys.time()
 
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
 source('loadlibrary.R')
 library(maps)
 library(fields)
@@ -53,6 +53,7 @@ sitecor <- function(x,vec,gvar,gsc){
 	return(tmp)
 }
 
+cat('\nStart loading ...\n\n')
 for (k in 1:5){
 	cat('\n\nk =',k,'\ni = ')
 	for (i in bstep:estep){

@@ -1,7 +1,7 @@
 options(digits=5)
 
 startTimeHere <- Sys.time()
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
 
 # load libraries
 source('loadlibrary.R')
@@ -137,6 +137,7 @@ if (step > 1) for (i in 2:step){
 		bbin <- which(bin[[bb]]<=(ii))+min(bin[[bb]])-1
 		# cat('\n',i,' ',sapply(1:nblock, function(x) mean(us[bbin,x]<=al[bbin,x])),' ',loc.ac/(i*nb),'\n')
 		# cat('',bloc[ii,],' ',beta1[ii,],' ',beta2[ii,],'\n',gvar[ii,],' ',gsc[ii,],'\n',loc.sample[ii,],' ',sc[ii,],' ',sh[ii,],'\n',copparm[ii,], ' ',sum(tlt[ii,]), ' ',format(Sys.time(),usetz = TRUE),'\n')
+		cat('\n',i,'/', step,' iterations have been done.')
 	}
 	for (k in 1:totalType){
 

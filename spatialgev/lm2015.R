@@ -1,7 +1,7 @@
 options(digits=5)
 
 startTimeHere <- Sys.time()
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
 
 # load libraries
 source('loadlibrary.R')
@@ -123,6 +123,7 @@ if (step > 1) for (i in 2:step){
 		ii <- i-1
 		# cat('\n',i,' ',sapply(1:nblock, function(x) mean(us[which(bin[[bb]]<=(ii)),x]<=al[which(bin[[bb]]<=(ii)),x])),'\n')
 		# cat('',bloc[ii,],' ',beta1[ii,],' ',beta2[ii,],'\n',sc[ii,],' ',sh[ii,],'\n',copparm[ii,], ' ',sum(tlt[ii,]), ' ',format(Sys.time(),usetz = TRUE),'\n')
+		cat('\n',i,'/', step,' iterations have been done.')
 	}
 	for (k in 1:totalType){
 
@@ -214,6 +215,7 @@ if (step > 1) for (i in 2:step){
 	tlt[i,6] <- sum(dcopula.gauss(mtu, tmp.sig, log=T))
 }
 # sapply(1:nblock,function(x) sapply(1:3,function(y) mean(us[bin[[y]],x]<=al[bin[[y]],x])))
+
 
 
 # Print table 4.

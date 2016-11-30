@@ -14,7 +14,7 @@ library(QRM)
 library(Rcpp)
 library(RcppArmadillo)
 
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3/")
 source('func.R')
 cat('Sourced func.R\n')
 source('func.cleansing.R')

@@ -3,7 +3,7 @@ library(lubridate)
 
 startTime <- Sys.time()
 
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3-jasa/")
 source('func.R')
 cat('Sourced func.R\n')
 source('func.cleansing.R')

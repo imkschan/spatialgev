@@ -1,6 +1,6 @@
 startTime <- Sys.time()
 
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3/")
 source('loadlibrary.R')
 library(maps)
 library(fields)

@@ -9,7 +9,7 @@ library(lubridate)
 # library(mtsdi)
 
 startTimeHere <- Sys.time()
-if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3/")
+# if (getwd()=="/Users/kschan" || getwd()=="/home/kschan" ) setwd("~/research/thesis-cpp/proj3/")
 source('loadlibrary.R')
 load('dlirwexp.RData')
 library(SpatialExtremes)
